@@ -24,7 +24,7 @@ class App extends Component {
     const songs = await dataFetcher.getAllSongs()
     this.setState({ songQueue: songs })
   } catch (error) {
-    console.error(error)
+    console.log(error)
   }
   }
 
