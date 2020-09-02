@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import SongController from '../SongController/SongController';
-
+import dataFetcher from '../../dataFetcher.js'
 class App extends Component {
   constructor() {
     super();
@@ -20,7 +20,7 @@ class App extends Component {
         <div className="App-background">
           <main>
           </main>
-        </div> 
+        </div>
       </div>
     )
   }
