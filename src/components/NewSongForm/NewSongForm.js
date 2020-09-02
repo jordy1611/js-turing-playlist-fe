@@ -41,11 +41,11 @@ class NewSongForm extends Component {
     return(
       <section className='new-song-form'>
         <label htmlFor='songName'>Song Name</label>
-        <input id='songName' type='text' onChange={this.updateText}></input>
+        <input id='songName' type='text' placeholder='Add Song' onChange={this.updateText}></input>
         <label htmlFor='artistName'>Artist Name</label>
-        <input id='artistName' type='text' onChange={this.updateText}></input>
+        <input id='artistName' type='text' placeholder='Add Artist' onChange={this.updateText}></input>
         <label htmlFor='songLink'>Link</label>
-        <input id='songLink' type='text' onChange={this.updateText}></input>
+        <input id='songLink' type='text' placeholder='Add Link' onChange={this.updateText}></input>
         <button onClick={this.addSongToQueue}>Add Song</button>
       </section>
     )
