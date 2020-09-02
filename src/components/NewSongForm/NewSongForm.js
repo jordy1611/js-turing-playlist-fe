@@ -6,19 +6,25 @@ class NewSongForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      songName: '',
+      artistName: '',
+      songLink: '',
     };
+  }
+
+  updateText = (event) => {
+    this.setState({ [event.target.id]: event.target.value })
   }
 
   render() {
     return(
       <section className='new-song-form'>
-        <label htmlFor='song-name-input'>Song Name</label>
-        <input id='song-name-input' type='text'></input>
-        <label htmlFor='artist-name-input'>Artist Name</label>
-        <input id='artist-name-input' type='text'></input>
-        <label htmlFor='link-input'>Link</label>
-        <input id='link-input' type='text'></input>
+        <label htmlFor='songName'>Song Name</label>
+        <input id='songName' type='text' onChange={this.updateText}></input>
+        <label htmlFor='artistName'>Artist Name</label>
+        <input id='artistName' type='text' onChange={this.updateText}></input>
+        <label htmlFor='songLink'>Link</label>
+        <input id='songLink' type='text' onChange={this.updateText}></input>
         <button>Add Song</button>
       </section>
     )
