@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import SongController from '../SongController/SongController';
+import SongCards from '../SongCards/SongCards'
+import SongCard from '../SongCard/SongCard'
+
 import dataFetcher from '../../dataFetcher.js'
 class App extends Component {
   constructor() {
@@ -27,6 +30,7 @@ class App extends Component {
         </header>
         <div className="App-background">
           <main>
+
           </main>
         </div>
       </div>
