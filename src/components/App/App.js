@@ -30,7 +30,8 @@ class App extends Component {
         </header>
         <div className="App-background">
           <main>
-            <SongCards />
+            <SongCards
+              songQueue={this.state.songQueue}/>
           </main>
         </div>
       </div>
