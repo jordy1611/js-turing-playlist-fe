@@ -10,6 +10,14 @@ class App extends Component {
     }
   }
 
+  componentDidMount = async() => {
+    try {
+    const songs = await dataFetcher.getAllSongs()
+    this.setState({ songQueue: songs })
+  } catch (error) {
+    console.error(error)
+  }
+  }
 
   render() {
     return (
