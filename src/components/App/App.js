@@ -30,7 +30,7 @@ class App extends Component {
         </header>
         <div className="App-background">
           <main>
-
+            <SongCards />
           </main>
         </div>
       </div>
