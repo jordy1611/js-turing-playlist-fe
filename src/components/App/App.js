@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import SongController from '../SongController/SongController';
 import SongCards from '../SongCards/SongCards'
-import SongCard from '../SongCard/SongCard'
+import NewSongForm from '../NewSongForm/NewSongForm'
 
 import dataFetcher from '../../dataFetcher.js'
 class App extends Component {
@@ -30,6 +30,7 @@ class App extends Component {
         </header>
         <div className="App-background">
           <main>
+            <NewSongForm />
             <SongCards
               songQueue={this.state.songQueue}/>
           </main>
