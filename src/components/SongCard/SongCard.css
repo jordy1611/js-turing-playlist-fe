@@ -1,0 +1,11 @@
+.song-card {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  background-color: grey;
+  font-size: 1.5em;
+  width: 20em;
+  height: 15em;
+  border: solid .4em;
+  border-radius: .3em;
+}
