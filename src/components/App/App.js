@@ -13,6 +13,12 @@ class App extends Component {
     }
   }
 
+  addSongToQueue = (song) => {
+    const songs = this.state.songQueue
+    songs.push(song)
+    this.setState({ songQueue: songs })
+  }
+
   componentDidMount = async() => {
     try {
     const songs = await dataFetcher.getAllSongs()
@@ -30,9 +36,12 @@ class App extends Component {
         </header>
         <div className="App-background">
           <main>
-            <NewSongForm />
+            <NewSongForm
+              addSongToQueue={this.addSongToQueue}
+            />
             <SongCards
-              songQueue={this.state.songQueue}/>
+              songQueue={this.state.songQueue}
+            />
           </main>
         </div>
       </div>
